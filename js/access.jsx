@@ -19,37 +19,18 @@ function Access(){
             </a>
           </div>
           <div className="ac-map reveal">
-            <div className="ac-pin">
-              <div className="ac-pin-dot"></div>
-              <div className="ac-pin-ring"></div>
-              <div className="ac-pin-label">河村製作所 / KAWAMURA WORKS</div>
+            <iframe
+              className="ac-map-iframe"
+              title="河村製作所 所在地マップ"
+              src="https://maps.google.com/maps?q=%E5%B2%90%E9%98%9C%E7%9C%8C%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D2467-127&z=16&hl=ja&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            <div className="ac-map-badge">
+              <span className="ac-mb-code">N 35.487° · E 137.495°</span>
+              <span className="ac-mb-name">河村製作所 / KAWAMURA WORKS</span>
             </div>
-            <svg viewBox="0 0 500 400" style={{width:'100%',height:'100%'}}>
-              <rect width="500" height="400" fill="#DCE9CF" opacity=".3"/>
-              {/* roads */}
-              <path d="M0 120 L500 180" stroke="#FAF8F2" strokeWidth="20" opacity=".8"/>
-              <path d="M0 120 L500 180" stroke="#FFB627" strokeWidth="3" strokeDasharray="12 12"/>
-              <path d="M100 0 L180 400" stroke="#FAF8F2" strokeWidth="14" opacity=".7"/>
-              <path d="M380 0 L340 400" stroke="#FAF8F2" strokeWidth="10" opacity=".6"/>
-              <path d="M0 300 L500 320" stroke="#FAF8F2" strokeWidth="10" opacity=".6"/>
-              {/* blocks */}
-              <g fill="#B8D4A8" opacity=".7">
-                <rect x="20" y="200" width="80" height="60" rx="2"/>
-                <rect x="190" y="200" width="100" height="70" rx="2"/>
-                <rect x="350" y="230" width="80" height="60" rx="2"/>
-                <rect x="30" y="30" width="60" height="60" rx="2"/>
-                <rect x="200" y="30" width="80" height="50" rx="2"/>
-                <rect x="400" y="30" width="70" height="60" rx="2"/>
-              </g>
-              {/* river */}
-              <path d="M0 350 Q120 330 250 360 T500 340 L500 400 L0 400 Z" fill="#7FB069" opacity=".4"/>
-              {/* rail */}
-              <path d="M0 100 L500 140" stroke="#0F3D2E" strokeWidth="1.5" strokeDasharray="6 4"/>
-              <text x="20" y="95" fontFamily="Space Mono" fontSize="9" fill="#0F3D2E" fontWeight="700" letterSpacing="2">JR 中央本線 / CHUO LINE</text>
-              {/* labels */}
-              <text x="480" y="180" textAnchor="end" fontFamily="Space Mono" fontSize="9" fill="#5A6B5F" letterSpacing="2">R19</text>
-              <text x="20" y="395" fontFamily="Space Mono" fontSize="9" fill="#5A6B5F" letterSpacing="2">木曽川</text>
-            </svg>
           </div>
         </div>
 
@@ -84,11 +65,28 @@ if(!document.getElementById('ac-css')){
     .ac-v{font-size:14px;font-weight:600;line-height:1.7;}
     .ac-gmap{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:12px 20px;background:var(--green-800);color:var(--cream);border-radius:999px;font-size:13px;font-weight:600;}
     .ac-map{position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-25d);border:1px solid rgba(15,61,46,.08);min-height:400px;background:#DCE9CF;}
-    .ac-pin{position:absolute;top:52%;left:50%;transform:translate(-50%,-100%);z-index:2;display:flex;flex-direction:column;align-items:center;}
-    .ac-pin-dot{width:16px;height:16px;border-radius:50%;background:var(--marigold);border:3px solid var(--green-800);box-shadow:0 4px 10px rgba(10,36,25,.3);}
-    .ac-pin-ring{position:absolute;top:-4px;width:32px;height:32px;border-radius:50%;border:2px solid var(--marigold);animation:pinRing 2s ease-out infinite;}
-    @keyframes pinRing{0%{transform:scale(.5);opacity:1;}100%{transform:scale(2.5);opacity:0;}}
-    .ac-pin-label{margin-top:12px;padding:8px 14px;background:var(--green-800);color:var(--cream);border-radius:8px;font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.12em;white-space:nowrap;box-shadow:0 4px 10px rgba(10,36,25,.3);}
+    .ac-map-iframe{
+      position:absolute;inset:0;width:100%;height:100%;border:0;display:block;
+      filter:saturate(.96);
+    }
+    .ac-map-badge{
+      position:absolute;left:14px;bottom:14px;z-index:2;
+      display:flex;flex-direction:column;gap:3px;
+      padding:10px 14px;border-radius:10px;
+      background:rgba(10,36,25,.88);color:var(--cream);
+      backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+      box-shadow:0 8px 20px -6px rgba(10,36,25,.45);
+      border:1px solid rgba(127,176,105,.22);
+      pointer-events:none;
+    }
+    .ac-mb-code{
+      font-family:var(--font-mono);font-size:9px;letter-spacing:.24em;
+      color:var(--green-300);font-weight:700;
+    }
+    .ac-mb-name{
+      font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;
+      color:var(--cream);font-weight:700;
+    }
     .ac-exterior{
       margin-top:32px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:stretch;
       background:var(--cream-2);border-radius:var(--radius-xl);overflow:hidden;
