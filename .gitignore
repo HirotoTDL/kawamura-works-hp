@@ -1,0 +1,21 @@
+# 設計ハンドオフ原本（サイズが大きく、デプロイには不要）
+_design/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*~
+
+# ビルド産物（現時点では無いが将来用）
+node_modules/
+dist/
+build/
+
+# ログ
+*.log

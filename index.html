@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>株式会社 河村製作所 — KAWAMURA WORKS</title>
+<meta name="description" content="岐阜県中津川市のプラスチック金型メーカー 株式会社 河村製作所。自動車・家電・オフィス製品向けの精密金型を、設計からトライまで一貫製造。1984年創業。">
+<meta name="author" content="Kawamura Works Co., Ltd.">
+<meta name="theme-color" content="#0F3D2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/hero.css">
+</head>
+<body>
+  <div id="grain"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- TOP NAV -->
+  <header class="nav">
+    <a class="nav-logo" href="#top" aria-label="株式会社 河村製作所">
+      <img class="nav-logo-img" src="assets/logo/logo2.png" alt="株式会社 河村製作所" width="615" height="100">
+      <span class="nav-wordmark">
+        <span class="en-sub">KAWAMURA WORKS · EST. 1984</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#process" data-jp="工程" data-en="Process">工程</a>
+      <a href="#machines" data-jp="設備" data-en="Machines">設備</a>
+      <a href="#products" data-jp="製品" data-en="Products">製品</a>
+      <a href="#about" data-jp="会社" data-en="About">会社</a>
+      <a href="#recruit" data-jp="採用" data-en="Careers">採用</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langBtn" aria-label="Language toggle">
+        <span class="lang-dot"></span>
+        <span class="lang-a">JP</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-b">EN</span>
+      </button>
+      <a href="#contact" class="nav-cta">
+        <span data-jp="お問合せ" data-en="Contact">お問合せ</span>
+        <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div id="hero-mount"></div>
+    <div id="marquee-mount"></div>
+    <div id="process-mount"></div>
+    <div id="machines-mount"></div>
+    <div id="products-mount"></div>
+    <div id="message-mount"></div>
+    <div id="about-mount"></div>
+    <div id="clients-mount"></div>
+    <div id="overseas-mount"></div>
+    <div id="recruit-mount"></div>
+    <div id="access-mount"></div>
+    <div id="contact-mount"></div>
+    <div id="footer-mount"></div>
+  </main>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+  <!-- Inlined global state so the page works even if js/state.js can't be served. -->
+  <script>
+  window.KW = window.KW || {};
+  window.KW.TWEAKS = {"heroVariant":"invisible","language":"jp","animationSpeed":1};
+  window.KW.listeners = new Set();
+  window.KW.setTweak = function(key, value){
+    window.KW.TWEAKS[key] = value;
+    window.KW.listeners.forEach(fn => fn(window.KW.TWEAKS));
+  };
+  window.KW.subscribe = function(fn){
+    window.KW.listeners.add(fn);
+    return () => window.KW.listeners.delete(fn);
+  };
+  (function(){
+    const glow = document.getElementById('cursor-glow'); if(!glow) return;
+    let raf, tx=0, ty=0, x=0, y=0;
+    document.addEventListener('mousemove', e => {
+      tx=e.clientX; ty=e.clientY; document.body.classList.add('cursor-active');
+      if(!raf) raf = requestAnimationFrame(tick);
+    });
+    document.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
+    function tick(){
+      x += (tx-x)*0.18; y += (ty-y)*0.18;
+      glow.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
+      if(Math.abs(tx-x)>0.5 || Math.abs(ty-y)>0.5){ raf=requestAnimationFrame(tick);} else raf=null;
+    }
+  })();
+  window.KW.observeReveal = function(root){
+    const els = (root || document).querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(el => io.observe(el));
+  };
+  setTimeout(() => window.KW.observeReveal(), 100);
+  setInterval(() => window.KW.observeReveal(), 1500);
+  </script>
+
+  <script type="text/babel" src="js/hero.jsx"></script>
+  <script type="text/babel" src="js/marquee.jsx"></script>
+  <script type="text/babel" src="js/process.jsx"></script>
+  <script type="text/babel" src="js/machines.jsx"></script>
+  <script type="text/babel" src="js/products.jsx"></script>
+  <script type="text/babel" src="js/message.jsx"></script>
+  <script type="text/babel" src="js/about.jsx"></script>
+  <script type="text/babel" src="js/clients.jsx"></script>
+  <script type="text/babel" src="js/overseas.jsx"></script>
+  <script type="text/babel" src="js/recruit.jsx"></script>
+  <script type="text/babel" src="js/access.jsx"></script>
+  <script type="text/babel" src="js/contact.jsx"></script>
+  <script type="text/babel" src="js/footer.jsx"></script>
+
+  <!-- Inlined language toggle -->
+  <script>
+  (function(){
+    function applyLang(){
+      const en = window.KW.TWEAKS.language === 'en';
+      document.body.classList.toggle('lang-en', en);
+      document.querySelectorAll('[data-jp]').forEach(el => {
+        const jp = el.getAttribute('data-jp');
+        const enT = el.getAttribute('data-en');
+        if(enT) el.textContent = en ? enT : jp;
+      });
+    }
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('#langBtn'); if(!btn) return;
+      window.KW.setTweak('language', window.KW.TWEAKS.language === 'en' ? 'jp' : 'en');
+    });
+    window.KW.subscribe(applyLang);
+    setTimeout(applyLang, 200);
+    setTimeout(applyLang, 1000);
+    setTimeout(applyLang, 2500);
+  })();
+  </script>
+</body>
+</html>
