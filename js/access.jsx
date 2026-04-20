@@ -4,7 +4,7 @@ function Access(){
       <div className="section-inner">
         <div className="section-head reveal">
           <div className="eyebrow">ACCESS · アクセス</div>
-          <h2 className="section-title"><span data-jp="所在地。" data-en="Find us.">所在地。</span><span className="en">GIFU · NAKATSUGAWA</span></h2>
+          <h2 className="section-title"><span data-jp="所在地" data-en="Find us">所在地</span><span className="en">GIFU · NAKATSUGAWA</span></h2>
         </div>
         <div className="ac-grid">
           <div className="ac-info reveal">

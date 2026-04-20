@@ -266,7 +266,7 @@ function ProcessSection(){
         <div className="section-head reveal">
           <div className="eyebrow">PROCESS · 製作工程</div>
           <h2 className="section-title">
-            <span data-jp="九つの工程、一貫の責任。" data-en="Nine steps, one accountability.">九つの工程、一貫の責任。</span>
+            <span data-jp="九つの工程 一貫の責任" data-en="Nine steps one accountability">九つの工程 一貫の責任</span>
             <span className="en">NINE STEPS · ONE ACCOUNTABILITY</span>
           </h2>
           <p className="lede">

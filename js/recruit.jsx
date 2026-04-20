@@ -6,8 +6,8 @@ function Recruit(){
           <div className="rec-left">
             <div className="eyebrow on-dark">RECRUIT · 採用情報</div>
             <h2 className="rec-title">
-              <span data-jp="手で考え、" data-en="Think with your hands.">手で考え、</span><br/>
-              <span data-jp="機械と話せる人へ。" data-en="Talk to the machines.">機械と話せる人へ。</span>
+              <span data-jp="手で考え" data-en="Think with your hands">手で考え</span><br/>
+              <span data-jp="機械と話せる人へ" data-en="Talk to the machines">機械と話せる人へ</span>
             </h2>
             <p data-jp="金型は、図面どおりには動かない。職人の目と手で、初めて形になる。若手が育ち、ベテランが磨き続ける。そんな現場を一緒に育ててくれる人を探しています。"
                data-en="Molds never obey the drawing alone. They become real through the craftsman's eye and hand. We're looking for people who want to grow alongside a workshop where youth and experience sharpen each other.">

@@ -6,8 +6,8 @@ function Message(){
           <div className="msg-left reveal">
             <div className="eyebrow on-dark">MESSAGE · 代表より</div>
             <h2 className="msg-title">
-              <span data-jp="当たり前のことを、" data-en="The ordinary,">当たり前のことを、</span><br/>
-              <span className="underline" data-jp="当たり前に。" data-en="done ordinarily well.">当たり前に。</span>
+              <span data-jp="当たり前のことを" data-en="The ordinary">当たり前のことを</span><br/>
+              <span className="underline" data-jp="当たり前に" data-en="done ordinarily well">当たり前に</span>
             </h2>
             <div className="msg-body">
               <p data-jp="一人ひとりの力が集まって、全員の技術力が集結したものづくり。弊社の最大の武器は、若き社員達の行動力と、それを支える確かな技術力・クラフトマンシップです。"

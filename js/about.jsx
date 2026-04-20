@@ -18,7 +18,7 @@ function About(){
         <div className="section-head reveal">
           <div className="eyebrow">COMPANY · 会社概要</div>
           <h2 className="section-title">
-            <span data-jp="会社概要。" data-en="About the company.">会社概要。</span>
+            <span data-jp="会社概要" data-en="About the company">会社概要</span>
             <span className="en">COMPANY PROFILE</span>
           </h2>
         </div>

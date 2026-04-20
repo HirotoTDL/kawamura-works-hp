@@ -5,7 +5,7 @@ function Overseas(){
         <div className="section-head reveal">
           <div className="eyebrow">GLOBAL · 海外拠点・協力メーカー</div>
           <h2 className="section-title">
-            <span data-jp="海を越えた、信頼のネットワーク。" data-en="A network of trust across the sea.">海を越えた、信頼のネットワーク。</span>
+            <span data-jp="海を越えた 信頼のネットワーク" data-en="A network of trust across the sea">海を越えた 信頼のネットワーク</span>
             <span className="en">KOREA OFFICE & PARTNERS</span>
           </h2>
           <p className="lede">

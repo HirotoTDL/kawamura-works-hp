@@ -77,7 +77,7 @@ function Machines(){
         <div className="section-head reveal">
           <div className="eyebrow">MACHINES · 保有設備</div>
           <h2 className="section-title">
-            <span data-jp="技術を支える、鋼鉄の仲間たち。" data-en="The steel companions behind the craft.">技術を支える、鋼鉄の仲間たち。</span>
+            <span data-jp="技術を支える 鋼鉄の仲間たち" data-en="The steel companions behind the craft">技術を支える 鋼鉄の仲間たち</span>
             <span className="en">EQUIPMENT · 50T–850T</span>
           </h2>
           <p className="lede">
@@ -135,9 +135,9 @@ function Machines(){
           <div className="mac-list-top">
             <div className="mac-list-eyebrow">FULL EQUIPMENT LIST · 保有機一覧</div>
             <h3 className="mac-list-ttl"
-                data-jp="社内に揃う、加工から測定までの全工程。"
-                data-en="Every step, in one workshop.">
-              社内に揃う、加工から測定までの全工程。
+                data-jp="社内に揃う 加工から測定までの全工程"
+                data-en="Every step in one workshop">
+              社内に揃う 加工から測定までの全工程
             </h3>
             <div className="mac-list-stats">
               <div><span className="mls-n">{totalKinds}</span><span className="mls-l">機種</span></div>

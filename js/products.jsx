@@ -45,7 +45,7 @@ function Products(){
         <div className="section-head reveal">
           <div className="eyebrow">PRODUCTS · 製品事例</div>
           <h2 className="section-title">
-            <span data-jp="私たちの金型が、形にするもの。" data-en="What our molds shape.">私たちの金型が、形にするもの。</span>
+            <span data-jp="私たちの金型が 形にするもの" data-en="What our molds shape">私たちの金型が 形にするもの</span>
             <span className="en">WHAT OUR MOLDS SHAPE</span>
           </h2>
         </div>

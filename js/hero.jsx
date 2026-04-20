@@ -14,11 +14,11 @@ const COPY = {
   invisible: {
     eyebrow_jp: "岐阜・中津川 / EST.1984",
     eyebrow_en: "GIFU · NAKATSUGAWA / EST.1984",
-    /* 3行構成：見えない / ところに / 私たちの金型。 */
+    /* 3行構成：見えない / ところに / 私たちの金型 */
     lines_jp: [
       { kind:"plain", text:"見えない" },
-      { kind:"plain", text:"ところに、" },
-      { kind:"pop",   text:"私たちの金型。" },
+      { kind:"plain", text:"ところに" },
+      { kind:"pop",   text:"私たちの金型" },
     ],
     lines_en: [
       { kind:"plain", text:"Inside" },
@@ -32,9 +32,9 @@ const COPY = {
     eyebrow_jp: "PRECISION SINCE 1984",
     eyebrow_en: "PRECISION SINCE 1984",
     lines_jp: [
-      { kind:"mono",  text:"0.01mm を、" },
+      { kind:"mono",  text:"0.01mm を" },
       { kind:"plain", text:"" },
-      { kind:"pop",   text:"昭和59年から。" },
+      { kind:"pop",   text:"昭和59年から" },
     ],
     lines_en: [
       { kind:"mono",  text:"0.01 mm —" },
@@ -48,9 +48,9 @@ const COPY = {
     eyebrow_jp: "FROM STEEL, TO EVERYDAY LIFE",
     eyebrow_en: "FROM STEEL, TO EVERYDAY LIFE",
     lines_jp: [
-      { kind:"plain", text:"鉄を、" },
-      { kind:"pop",   text:"かたちに。" },
-      { kind:"plain", text:"かたちを、暮らしに。" },
+      { kind:"plain", text:"鉄を" },
+      { kind:"pop",   text:"かたちに" },
+      { kind:"plain", text:"かたちを 暮らしに" },
     ],
     lines_en: [
       { kind:"plain", text:"Steel" },
