@@ -14,16 +14,14 @@ const COPY = {
   invisible: {
     eyebrow_jp: "岐阜・中津川 / EST.1984",
     eyebrow_en: "GIFU · NAKATSUGAWA / EST.1984",
-    /* 3行構成：見えない / ところに / 私たちの金型 */
+    /* 2行構成：見えないところに / 私たちの金型 */
     lines_jp: [
-      { kind:"plain", text:"見えない" },
-      { kind:"plain", text:"ところに" },
+      { kind:"plain", text:"見えないところに" },
       { kind:"pop",   text:"私たちの金型" },
     ],
     lines_en: [
-      { kind:"plain", text:"Inside" },
-      { kind:"plain", text:"a million things —" },
-      { kind:"pop",   text:"our molds." },
+      { kind:"plain", text:"Inside a million things" },
+      { kind:"pop",   text:"our molds" },
     ],
     lede_jp: "クルマのダッシュ、家電のパネル、椅子の構造部品。あなたの暮らしを構成する『形』の多くは、金型から生まれている。私たち河村製作所は、その金型を、岐阜・中津川で1984年からつくり続けています。",
     lede_en: "Car dashboards, appliance panels, chair components. Most of the shapes around you start as a mold — and we've been making those molds in Gifu since 1984.",
@@ -32,14 +30,12 @@ const COPY = {
     eyebrow_jp: "PRECISION SINCE 1984",
     eyebrow_en: "PRECISION SINCE 1984",
     lines_jp: [
-      { kind:"mono",  text:"0.01mm を" },
-      { kind:"plain", text:"" },
+      { kind:"mono",  text:"0.01mmの精度で" },
       { kind:"pop",   text:"昭和59年から" },
     ],
     lines_en: [
-      { kind:"mono",  text:"0.01 mm —" },
-      { kind:"plain", text:"" },
-      { kind:"pop",   text:"since 1984." },
+      { kind:"mono",  text:"A hundredth of a millimeter" },
+      { kind:"pop",   text:"since 1984" },
     ],
     lede_jp: "百分の一ミリの世界で、量産現場の『当たり前』を支える金型を。CAD/CAMから手仕事の磨きまで、設計→製造→トライを社内一貫。50t〜850tクラスに対応します。",
     lede_en: "A hundredth of a millimeter, every day. From CAD/CAM to hand-polishing — design, manufacture and try-out, all in-house. 50t – 850t class.",
@@ -48,14 +44,12 @@ const COPY = {
     eyebrow_jp: "FROM STEEL, TO EVERYDAY LIFE",
     eyebrow_en: "FROM STEEL, TO EVERYDAY LIFE",
     lines_jp: [
-      { kind:"plain", text:"鉄を" },
-      { kind:"pop",   text:"かたちに" },
-      { kind:"plain", text:"かたちを 暮らしに" },
+      { kind:"plain", text:"鉄をかたちに" },
+      { kind:"pop",   text:"かたちを暮らしに" },
     ],
     lines_en: [
-      { kind:"plain", text:"Steel" },
-      { kind:"pop",   text:"becomes form." },
-      { kind:"plain", text:"Form becomes life." },
+      { kind:"plain", text:"Steel becomes form" },
+      { kind:"pop",   text:"Form becomes life" },
     ],
     lede_jp: "一枚の鋼から、毎日使われるプロダクトの『形』が生まれる。河村製作所は、自動車・家電・オフィス製品のプラスチック金型を、岐阜・中津川の工場で一貫製造しています。",
     lede_en: "From a single block of steel, the shape of daily life. We design and manufacture plastic injection molds for automotive, appliance and office products — all under one roof in Gifu, Japan.",

@@ -9,8 +9,8 @@ function Contact(){
           <div className="cc-left reveal">
             <div className="eyebrow on-dark">CONTACT · お問合せ</div>
             <h2 className="cc-title">
-              <span data-jp="まず" data-en="Let's start">まず</span><br/>
-              <span data-jp="お話を聞かせてください" data-en="with a conversation">お話を聞かせてください</span>
+              <span data-jp="まずはお話を" data-en="Let's start">まずはお話を</span><br/>
+              <span data-jp="聞かせてください" data-en="with a conversation">聞かせてください</span>
             </h2>
             <p data-jp="お見積り、技術のご相談、アフターフォロー。どんな段階でもお気軽に。通常2営業日以内にご返信します。"
                data-en="Quotes, technical consultation, after-service—whatever stage you're at, reach out. We reply within 2 business days.">
