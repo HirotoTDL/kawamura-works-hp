@@ -471,8 +471,8 @@ if(!document.getElementById('hero-v3-css')){
 
     .hero-title{
       font-family:var(--font-jp); font-weight:900;
-      font-size: clamp(44px, 6.4vw, 92px);
-      line-height:1.02; letter-spacing:-.02em; color:var(--green-900);
+      font-size: clamp(40px, 5.4vw, 78px);
+      line-height:1.02; letter-spacing:-.03em; color:var(--green-900);
       margin:8px 0 4px;
     }
     .hero-title .line{display:block; overflow:hidden; padding-right:.04em;}

@@ -270,10 +270,10 @@ if(!document.getElementById('mac-css')){
       background:var(--green-900);color:var(--cream);
       padding:14px 22px;border-radius:var(--radius-md);
     }
-    .mac-list-stats > div{display:flex;flex-direction:column;align-items:center;min-width:56px;}
+    .mac-list-stats > div:not(.mls-rule){display:flex;flex-direction:column;align-items:center;min-width:56px;}
     .mls-n{font-family:var(--font-en);font-size:30px;font-weight:700;line-height:1;color:var(--marigold);letter-spacing:-.02em;}
     .mls-l{font-family:var(--font-mono);font-size:9px;letter-spacing:.22em;color:var(--green-200);font-weight:700;margin-top:5px;}
-    .mls-rule{width:1px;height:28px;background:rgba(244,240,232,.25);min-width:1px;}
+    .mls-rule{width:1px;min-width:1px;max-width:1px;height:28px;background:rgba(244,240,232,.35);flex:0 0 1px;align-self:center;}
 
     .mac-list-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 40px;}
     @media(max-width:860px){.mac-list-groups{grid-template-columns:1fr;gap:24px;}}
