@@ -140,6 +140,18 @@ section{position:relative;padding:120px 28px;}
 .eyebrow.on-dark::before{background:var(--green-300);}
 
 h1,h2,h3,h4{font-family:var(--font-jp);font-weight:900;line-height:1.1;letter-spacing:-.01em;}
+/* Titles: break only at intentional whitespace (keep-all),
+   fall back to anywhere only if a single clause overflows. */
+h1.hero-title,
+h2.section-title,
+h2.msg-title,
+h2.rec-title,
+h2.cc-title,
+h3.mac-list-ttl{
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  line-break:strict;
+}
 h2.section-title{
   font-size:clamp(38px,5.2vw,68px);font-weight:900;
   margin-top:14px;margin-bottom:8px;

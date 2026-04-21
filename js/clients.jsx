@@ -11,7 +11,7 @@ function Clients(){
         <div className="section-head reveal">
           <div className="eyebrow">CLIENTS · 主な取引先</div>
           <h2 className="section-title">
-            <span data-jp="信頼の 長いお付き合い" data-en="Partners we build the long road with">信頼の 長いお付き合い</span>
+            <span data-jp="信頼の長いお付き合い" data-en="Partners we build the long road with">信頼の長いお付き合い</span>
             <span className="en">TRUSTED CLIENTS · 五十音順</span>
           </h2>
         </div>
