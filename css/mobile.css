@@ -1,0 +1,161 @@
+/* =====================================================================
+   MOBILE OVERRIDES — smartphone-only adjustments (<= 640px).
+   PC / tablet layouts are NOT affected.
+   Goal: eliminate horizontal overflow and make content fit 320–640px.
+   ===================================================================== */
+
+@media (max-width: 640px) {
+
+  /* --- Global overflow guards --- */
+  html, body { max-width: 100%; overflow-x: hidden; }
+  img, svg, iframe, video { max-width: 100%; height: auto; }
+  main, section, .section-inner { max-width: 100vw; }
+
+  /* --- Section padding: tighter sides --- */
+  section { padding: 64px 14px !important; }
+
+  /* --- NAV --- */
+  .nav { padding: 10px 12px !important; gap: 6px; }
+  .nav-logo-img { height: 26px !important; }
+  .nav-cta { padding: 8px 12px !important; font-size: 11.5px !important; }
+  .lang-toggle { padding: 6px 9px !important; font-size: 10px !important; }
+
+  /* --- Section titles --- */
+  h2.section-title { font-size: clamp(28px, 8.4vw, 40px) !important; }
+
+  /* --- HERO --- */
+  .hero { padding: 88px 16px 32px !important; min-height: auto !important; }
+  .hero-title { font-size: clamp(36px, 11vw, 56px) !important; }
+  .hero-lede { font-size: 14px !important; line-height: 1.75 !important; }
+  .hero-stats { gap: 18px !important; padding-top: 18px !important; margin-top: 18px !important; flex-wrap: wrap; }
+  .hero-stat .n { font-size: 24px !important; }
+  .pc-stage { max-height: 58vh !important; }
+  .pc-card-center { width: 56% !important; }
+
+  /* --- MARQUEE (LIVE feed) --- */
+  .tk { height: 74px !important; }
+  .tk-side-l, .tk-side-r { padding: 0 10px !important; }
+  .tk-label { font-size: 11.5px !important; }
+  .tk-code { font-size: 10px !important; }
+
+  /* --- PROCESS 9-STEP --- */
+  .p2v3-map { padding: 18px 0 6px !important; }
+  .p2v3-viewer .p2v3-step { padding: 32px 22px 26px !important; min-height: auto !important; }
+  .p2v3-step-n { font-size: 36px !important; }
+  .p2v3-step-jp { font-size: 24px !important; }
+  .p2v3-step-desc { font-size: 13.5px !important; line-height: 1.75 !important; }
+  .p2v3-step-head { gap: 10px !important; margin-bottom: 14px !important; }
+  .p2v3-step-rule { width: 28px !important; }
+
+  /* --- MACHINES featured cards --- */
+  .mac-tabs { gap: 6px !important; }
+  .mac-tab { padding: 8px 12px !important; font-size: 12px !important; gap: 6px; }
+  .mac-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .mc-body { padding: 14px 16px 16px !important; }
+
+  /* --- MACHINES full equipment list --- */
+  .mac-list { padding: 22px 16px !important; }
+  .mac-list-ttl { font-size: 22px !important; }
+  .mac-list-top { padding-bottom: 18px !important; margin-bottom: 20px !important; gap: 14px; }
+  .mac-list-stats { flex-wrap: wrap !important; gap: 10px 16px !important; padding: 12px 14px !important; justify-content: space-around; }
+  .mac-list-stats .mls-rule { display: none !important; }
+  .mac-list-stats > div { min-width: 0 !important; }
+  .mls-n { font-size: 24px !important; }
+  .mls-l { font-size: 8.5px !important; }
+  .mac-list-groups { gap: 22px !important; }
+  .mlg-head { flex-wrap: wrap; gap: 8px; }
+  .mlg-name { font-size: 14px !important; flex: 1 1 auto; min-width: 0; word-break: break-word; }
+  .mli-maker, .mli-model { word-break: break-word; }
+
+  /* --- PRODUCTS --- */
+  .prod-list { font-size: 13px; }
+  .prod-row { padding: 18px 6px !important; gap: 10px !important; }
+  .pr-title { font-size: 15px !important; }
+  .pc-content { padding: 22px !important; }
+  .pc-title { font-size: 22px !important; }
+  .pc-desc { font-size: 13px !important; margin-bottom: 16px !important; }
+  .pc-meta { gap: 14px !important; flex-wrap: wrap; padding-top: 12px !important; }
+  .pcm-v { font-size: 12px !important; }
+
+  /* --- MESSAGE --- */
+  .msg-title { font-size: clamp(32px, 9vw, 46px) !important; }
+  .msg-body p { font-size: 14px !important; line-height: 1.85 !important; }
+  .msg-portrait { max-width: 300px !important; margin: 0 auto !important; }
+  .sign-name { font-size: 22px !important; }
+  .mp-seal { width: 58px !important; height: 58px !important; font-size: 20px !important; top: -14px !important; right: -14px !important; }
+  .mp-caption { font-size: 9px !important; letter-spacing: .18em !important; }
+
+  /* --- ABOUT --- */
+  .about-table { padding: 4px 18px !important; }
+  .at-row { grid-template-columns: 1fr !important; gap: 4px !important; padding: 14px 0 !important; }
+  .at-value { font-size: 13.5px !important; word-break: break-word; }
+  .af-card { padding: 20px !important; }
+  .af-num { font-size: 44px !important; }
+  .af-label { font-size: 13px !important; }
+  .af-photo-tag { font-size: 8.5px !important; padding: 4px 8px !important; left: 10px !important; bottom: 10px !important; letter-spacing: .2em; }
+
+  /* --- CLIENTS --- */
+  .clients-grid { grid-template-columns: 1fr !important; gap: 8px !important; }
+  .client-tile { padding: 18px 16px !important; }
+  .ct-name { font-size: 13px !important; word-break: break-word; }
+
+  /* --- OVERSEAS --- */
+  .ov-office { padding: 24px !important; }
+  .ovo-name { font-size: 38px !important; }
+  .ovo-rows > div { padding-top: 10px !important; gap: 3px !important; }
+  .ovo-rows span:last-child { word-break: break-word; font-size: 12.5px !important; }
+  .ov-map { padding: 16px !important; }
+  .ovp-label { font-size: 8.5px !important; padding: 5px 8px !important; left: 6px !important; right: 6px !important; bottom: 6px !important; }
+
+  /* --- RECRUIT --- */
+  .rec-card { padding: 28px !important; }
+  .rec-card::before { font-size: 120px !important; right: -14px !important; bottom: -20px !important; }
+  .rec-title { font-size: clamp(28px, 8vw, 40px) !important; }
+  .rec-stats { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .rs-stat { padding: 14px !important; }
+  .rs-n { font-size: 28px !important; }
+  .rs-l { font-size: 9px !important; letter-spacing: .16em !important; }
+  .rec-chip { font-size: 11px !important; padding: 5px 10px !important; }
+
+  /* --- ACCESS --- */
+  .ac-info { padding: 22px !important; }
+  .ac-row { grid-template-columns: 86px 1fr !important; gap: 10px !important; padding: 14px 0 !important; }
+  .ac-l { font-size: 9px !important; }
+  .ac-v { font-size: 13px !important; word-break: break-word; }
+  .ac-gmap { padding: 10px 16px !important; font-size: 12px !important; }
+  .ac-map { min-height: 300px !important; }
+  .ac-map-badge { left: 10px !important; bottom: 10px !important; padding: 8px 10px !important; }
+  .ac-mb-name { font-size: 10px !important; }
+  .ac-mb-code { font-size: 8.5px !important; }
+  .ac-exterior-img { min-height: 220px !important; }
+  .ac-exterior-meta { padding: 24px !important; }
+  .ac-ex-name { font-size: 20px !important; }
+
+  /* --- CONTACT --- */
+  .cc-title { font-size: clamp(30px, 8.6vw, 44px) !important; }
+  .cc-left p { font-size: 14px !important; }
+  .cc-form { padding: 22px !important; gap: 16px !important; }
+  .cc-inline > div { flex-direction: column !important; align-items: flex-start !important; gap: 4px !important; }
+  .cc-inline > div > span:last-child { word-break: break-word; }
+  .cc-kind { font-size: 12px !important; padding: 8px 12px !important; min-width: 0 !important; }
+
+  /* --- FOOTER --- */
+  .ft-sec { padding: 60px 18px 20px !important; }
+  .ft-nav { grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
+  .ft-mega { font-size: 56px !important; line-height: .9 !important; margin: 16px 0 28px !important; word-break: break-all; }
+  .ft-bottom { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+  .ft-addr { font-size: 12px !important; }
+}
+
+/* Extra-narrow phones (≤ 380px) */
+@media (max-width: 380px) {
+  .hero-title { font-size: 34px !important; }
+  .ovo-name { font-size: 30px !important; }
+  .af-num { font-size: 36px !important; }
+  .rec-stats { grid-template-columns: 1fr !important; }
+  .ft-nav { grid-template-columns: 1fr !important; }
+  .ft-mega { font-size: 44px !important; }
+  .p2v3-step-jp { font-size: 20px !important; }
+  .pc-title { font-size: 20px !important; }
+  .msg-title { font-size: 28px !important; }
+}
